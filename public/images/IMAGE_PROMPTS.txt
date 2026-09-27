@@ -1,0 +1,177 @@
+HERO SECTION: IMAGE GENERATION PROMPTS
+======================================
+
+Save each result in public/images/ using the exact filename shown.
+All four images must be PNGs with a TRANSPARENT background (no white box).
+If your generator can't do transparency, generate on plain white, then run it
+through a background remover (remove.bg, Photoshop "Remove Background", or
+Magnific / Freepik background removal).
+
+Until a PNG exists, the site automatically falls back to the old .jpg.
+
+
+--------------------------------------------------------------------------
+1) hero-portrait.png  (the big centre cutout, the most important image)
+--------------------------------------------------------------------------
+Size / ratio: portrait, 2:3 or taller (e.g. 1600 x 2800 px), full body,
+head near the very top and shoes at the bottom, small margin around her.
+
+PROMPT:
+Full-body studio photograph of a young Indian woman in her mid-20s,
+standing and facing the camera with a warm, confident closed-mouth smile.
+Long dark brown hair, slightly wavy, falling past her shoulders with a
+side part. Small gold hoop earrings. She wears a tailored dark chocolate-
+brown oversized blazer, open, over a soft cream / blush fitted crew-neck
+top, with matching dark brown high-waisted wide-leg pleated trousers that
+fall to the floor. Black pointed-toe heeled boots. Her right hand is
+casually in her trouser pocket, and her left arm hangs relaxed holding a black
+structured leather tote handbag by the handles. Thin black bracelet on the
+left wrist. Relaxed, slightly angled stance with one foot forward. Clean
+soft even studio lighting, soft shadow under the feet, photorealistic,
+sharp focus, 85mm lens, fashion editorial / professional portfolio style.
+Isolated on a pure transparent background, cut-out, no background.
+
+NEGATIVE: background, scenery, wall, floor texture, extra limbs, distorted
+hands, cropped feet, cropped head, text, watermark, blur.
+
+TIP: For a portfolio of a real person, the best result is a REAL photo of her in
+this pose/outfit with the background removed. Use the prompt above as
+a shot brief for the photographer.
+
+
+--------------------------------------------------------------------------
+2) cat.png  (sticker peeking over the letter "V")
+--------------------------------------------------------------------------
+Size / ratio: square, 1024 x 1024 px.
+
+PROMPT:
+Cute kawaii 3D cat mascot peeking over an edge, only the head and two
+little front paws visible, as if hanging onto a ledge. Glossy
+dark indigo-black body with a soft purple / violet rim light and
+iridescent purple highlights. Large pink-lilac inner ears. Happy closed
+eyes drawn as simple upside-down "U" arcs, tiny "w" shaped cat smile,
+small pink paws. Smooth, soft, rounded, toy-like vinyl material, subtle
+subsurface glow, Pixar / Blender 3D render style, soft studio lighting,
+slight 3/4 angle tilted to the left. Isolated on a transparent background,
+no shadow on the ground, sticker asset.
+
+NEGATIVE: realistic fur, whiskers, full body, background, text, outline.
+
+
+--------------------------------------------------------------------------
+3) ramen.png  (sticker on the right, over "ika")
+--------------------------------------------------------------------------
+Size / ratio: square, 1024 x 1024 px.
+
+PROMPT:
+Cute kawaii 3D ramen cup mascot. Rounded pastel pink-to-cream gradient
+paper bowl / cup with a happy face on the front: closed smiling eyes
+drawn as little arcs, small open smiling mouth, soft pink blush on the
+cheeks. The top overflows with golden curly noodles, and a pair of wooden
+chopsticks stick diagonally out of the noodles toward the upper right.
+Glossy soft toy-like material, soft studio lighting, gentle highlights,
+Pixar / Blender 3D render style, slightly tilted, 3/4 view. Isolated on a
+transparent background, sticker asset.
+
+NEGATIVE: realistic food photo, steam, background, table, text, logo.
+
+
+--------------------------------------------------------------------------
+4) avatar.png  (small round avatar next to "Vanshika Gupta", top-left)
+--------------------------------------------------------------------------
+Size / ratio: square, 512 x 512 px (shown in a circle, so keep the face
+centred and leave room around the head).
+
+PROMPT:
+Stylised 3D cartoon avatar portrait of a young Indian woman, head and
+shoulders, long dark brown wavy hair with a side part, warm friendly
+smile, big expressive brown eyes, small gold earrings, wearing a cream
+top under a dark brown blazer. Semi-realistic Pixar / Disney style 3D
+character, soft studio lighting, smooth skin shading. Centred in frame,
+plain very light grey (#f2f2f2) background.
+
+(A background is fine here because the avatar is cropped into a circle.)
+
+
+--------------------------------------------------------------------------
+OPTIONAL: extra consistency tips
+--------------------------------------------------------------------------
+- Generate the cat and the ramen in the same session/style seed so they
+  look like a matching sticker set.
+- Keep lighting on the portrait soft and neutral so it sits naturally on
+  the white page. Avoid coloured rim lights.
+- The blue sparkle dashes and the heart speech-bubble are drawn in code
+  (SVG/CSS), so you don't need images for them.
+
+
+==========================================================================
+WORK SECTION: CASE-STUDY SHOWCASE IMAGES
+==========================================================================
+
+Save these in public/images/projects/ with the exact filenames below.
+Each project has two images:
+
+  <id>-screen.jpg  = what shows inside the laptop's browser window.
+                     16:10 landscape (e.g. 1600 x 1000). Best: a REAL
+                     screenshot of your design from Figma, dark UI.
+  <id>-art.png     = the hero artwork that bursts OUT of the frame
+                     (like the fighter jets in the reference). Transparent
+                     PNG, landscape ~1600 x 1000, subject centred, dramatic
+                     lighting, lots of empty transparent space around it.
+
+Until an image exists, the card shows a soft glow in the project's colour.
+
+
+--------------------------------------------------------------------------
+Papertrail AI   (papertrail-screen.jpg / papertrail-art.png)
+--------------------------------------------------------------------------
+ART PROMPT:
+Cinematic 3D render of glowing paper documents and index cards flying
+out of a portal in a dynamic swirl, pages connected by thin luminous
+indigo and violet threads forming a knowledge graph, a few pages
+mid-fold like paper planes streaking forward with light trails, deep
+indigo-to-purple rim lighting with warm white highlights, volumetric
+light burst behind them, high detail, dramatic perspective, isolated on
+a transparent background, no text.
+
+SCREEN PROMPT (only if you don't have a real screenshot):
+Dark-mode UI of an AI research canvas web app: infinite canvas with
+connected note cards, a left sidebar of documents, an AI chat panel on
+the right, indigo accent colour, clean modern product design, crisp UI
+screenshot, 16:10.
+
+
+--------------------------------------------------------------------------
+Lumina Wealth   (lumina-wealth-screen.jpg / lumina-wealth-art.png)
+--------------------------------------------------------------------------
+ART PROMPT:
+Cinematic 3D render of two sleek glass smartphones floating at dynamic
+angles, their screens showing glowing emerald-green portfolio growth
+charts, surrounded by translucent glass coins and rising green light
+streaks, soft teal and emerald rim lighting, energy burst behind, premium
+fintech aesthetic, high detail, isolated on a transparent background,
+no text, no logos.
+
+SCREEN PROMPT:
+Dark-mode investment dashboard web app, portfolio value hero number,
+smooth emerald line chart, allocation donut chart, holdings list,
+emerald/teal accent colour, clean fintech product design, UI screenshot,
+16:10.
+
+
+--------------------------------------------------------------------------
+Aura Design System   (aura-system-screen.jpg / aura-system-art.png)
+--------------------------------------------------------------------------
+ART PROMPT:
+Cinematic 3D render of floating UI components exploding outward in an
+isometric burst: glossy buttons, toggles, sliders, cards, colour swatch
+chips and typography tiles, arranged like a design-system kit, glass and
+soft plastic materials, pink / rose / amber gradient lighting with bright
+rim highlights, dramatic depth of field, isolated on a transparent
+background, no readable text.
+
+SCREEN PROMPT:
+Dark-mode design system documentation site: component library grid
+showing buttons, inputs, colour tokens and typography scale, left
+navigation sidebar, pink accent colour, clean product design, UI
+screenshot, 16:10.
