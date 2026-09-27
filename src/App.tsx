@@ -14,7 +14,6 @@ import { Footer } from './components/Footer';
 import { ProjectModal } from './components/ProjectModal';
 import { CommandPalette } from './components/CommandPalette';
 import { Loader } from './components/Loader';
-import { CursorHead } from './components/CursorHead';
 import { MusicToggle } from './components/MusicToggle';
 import type { Project } from './types';
 import { PROJECTS } from './data/portfolioData';
@@ -57,9 +56,15 @@ export function App() {
     return cleanup;
   }, []);
 
+  // Hero fully revealed: let it play its entrance animation
   const handleLoaderReveal = useCallback(() => {
     document.documentElement.classList.remove('is-loading');
+  }, []);
+
+  // Intro fully gone: hand scrolling back to the page
+  const handleLoaderDone = useCallback(() => {
     startScroll();
+    setIsLoading(false);
   }, []);
 
   // Theme on the root element
@@ -114,9 +119,7 @@ export function App() {
 
   return (
     <div className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] transition-colors duration-300 relative selection:bg-indigo-500 selection:text-white">
-      {isLoading && <Loader onReveal={handleLoaderReveal} onDone={() => setIsLoading(false)} />}
-
-      <CursorHead />
+      {isLoading && <Loader onReveal={handleLoaderReveal} onDone={handleLoaderDone} />}
 
       <Navbar
         activeSection={activeSection}

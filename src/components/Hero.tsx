@@ -139,13 +139,13 @@ export const Hero: React.FC<HeroProps> = ({
     <section
       ref={sectionRef}
       id="home"
-      className="hero-stage relative lg:h-screen lg:min-h-[680px] pt-24 lg:pt-0 pb-10 lg:pb-0 overflow-hidden select-none"
+      className="hero-stage relative lg:h-[100svh] pt-24 lg:pt-0 pb-10 lg:pb-0 overflow-hidden select-none"
     >
-      {/* Stage: giant name, cutout portrait and stickers */}
-      <div className="relative h-[70vh] min-h-[440px] lg:absolute lg:inset-0 lg:h-auto lg:min-h-0">
+      {/* Stage: giant name, cutout portrait and stickers (a 16:9 composition scaled to fill the screen on desktop) */}
+      <div className="hero-comp relative h-[70vh] min-h-[440px]">
         {/* Giant "Vanshika" behind the portrait */}
         <div
-          className="absolute inset-x-0 top-[26%] flex justify-center lg:justify-end lg:top-[27.2vh] lg:right-[1.6vw] lg:left-auto z-0 transition-transform duration-300 ease-out"
+          className="absolute inset-x-0 top-[26%] flex justify-center lg:justify-end lg:top-[27.2%] lg:right-[1.6%] lg:left-auto z-0 transition-transform duration-300 ease-out"
           style={parallax(-0.35)}
         >
           <h1 className="hero-giant-title relative whitespace-nowrap" aria-label="Vanshika">
@@ -184,7 +184,7 @@ export const Hero: React.FC<HeroProps> = ({
 
         {/* Cutout portrait */}
         <div
-          className="absolute bottom-0 lg:bottom-[6.5vh] left-1/2 lg:left-[52.6%] -translate-x-1/2 h-full lg:h-[84vh] z-10 transition-transform duration-200 ease-out"
+          className="absolute bottom-0 lg:bottom-[6.5%] left-1/2 lg:left-[52.6%] -translate-x-1/2 h-full lg:h-[84%] z-10 transition-transform duration-200 ease-out"
           style={parallax(0.25)}
         >
           <div className="hero-enter-portrait relative h-full">
@@ -201,7 +201,7 @@ export const Hero: React.FC<HeroProps> = ({
 
         {/* Sticker: blue heart speech bubble */}
         <div
-          className="absolute top-[52%] right-[25%] lg:top-[46.6vh] lg:right-auto lg:left-[72.7vw] z-20 transition-transform duration-300 ease-out"
+          className="absolute top-[52%] right-[25%] lg:top-[46.6%] lg:right-auto lg:left-[72.7%] z-20 transition-transform duration-300 ease-out"
           style={parallax(0.8)}
         >
           <div className="hero-enter-pop" style={{ '--d': '1.45s' } as React.CSSProperties}>
@@ -222,7 +222,7 @@ export const Hero: React.FC<HeroProps> = ({
 
         {/* Sticker: smiling ramen cup */}
         <div
-          className="absolute top-[48%] right-[2%] lg:top-[44.6vh] lg:right-auto lg:left-[76.9vw] z-20 transition-transform duration-300 ease-out"
+          className="absolute top-[48%] right-[2%] lg:top-[44.6%] lg:right-auto lg:left-[76.9%] z-20 transition-transform duration-300 ease-out"
           style={parallax(1.4)}
         >
           <div className="hero-enter-pop" style={{ '--d': '1.55s' } as React.CSSProperties}>
@@ -236,7 +236,7 @@ export const Hero: React.FC<HeroProps> = ({
                 src="/images/ramen.png"
                 onError={withFallback('/images/ramen.jpg')}
                 alt=""
-                className="w-[24vw] lg:w-[7.5vw] h-auto drop-shadow-[0_18px_22px_rgba(200,90,120,0.22)]"
+                className="w-[24vw] lg:w-[calc(7.5*var(--u))] h-auto drop-shadow-[0_18px_22px_rgba(200,90,120,0.22)]"
               />
               <SparkleLines className="absolute top-[36%] -right-[34%] w-[36%] rotate-[100deg]" />
             </button>
